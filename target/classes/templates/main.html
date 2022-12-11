@@ -178,11 +178,17 @@
       <a href="###">add</a>
     </div>
     <div class="logo-block">
+      <button type="button" th:onclick="|window.location.href='/do-stuff2'|">Back</button>
+      <button type="button" th:onclick="|window.location.href='/do-stuff'|">Next</button>
+
       <div class="logo">
         <img src="../static/images/alatoo.png" th:src="@{images/alatoo.png}" alt="">
       </div>
+
     </div>
+
   </div>
-</div>
+ </div>
+
 </body>
 </html>

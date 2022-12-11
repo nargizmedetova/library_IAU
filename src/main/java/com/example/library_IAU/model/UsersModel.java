@@ -11,8 +11,10 @@ public class UsersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
     String password, email;
+    //Objects<Books> = new Object;
+
 
     @Override
     public String toString() {
@@ -35,11 +37,11 @@ public class UsersModel {
         return Objects.hash(id, password, email);
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
