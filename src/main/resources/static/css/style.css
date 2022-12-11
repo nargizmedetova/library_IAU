@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*src="../static/images/alatoo.png" th:src="@{images/alatoo.png}"*/
+/*./pic/background_library.png*/
+body {
+    background-image: url(../images/library.jpg);
+    background-size: cover;
+}
+
+.main--page-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.header-block {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 28vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 20%;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+header .header-logo img {
+    width: 154px;
+    height: 154px;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: flex-start;
+    width: 11%;
+    height: 120px;
+    align-items: flex-start;
+
+}
+
+.header-btn a {
+    text-decoration: none;
+    color: #FCE3E3;
+    background: #62C36C;
+
+    border-radius: 50px;
+    padding: 10px 0px 0px 29px;
+    height: 60px;
+    width: 78%;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.header-btn a:hover {
+    transition: 0.3s ease;
+    color: #62C36C;
+    background: #FCE3E3;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    height: 52vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logpass-block {
+    display: flex;
+    flex-direction: column;
+    height: 23vh;
+    width: 42%;
+
+}
+
+.logpass-block input {
+    height: 100px;
+    margin-top: 25px;
+    padding-left: 35px;
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+
+    background-color: #62C36C;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+.logpass-block input::placeholder {
+    color: white;
+}
+
+.forgot-block {
+    display: flex;
+    justify-content: flex-end;
+    
+    width: 41%;
+    height: 4vh;
+    margin-top: 15px;
+
+}
+
+.forgot-block a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 4px 3px 4px 2px;
+
+    color: #0075FF;
+    background: #D9D9D9;
+}
+
+.forgot-block a:hover {
+    transition: 0.3s ease;
+    color: #D9D9D9;
+    background: #0075FF;
+}
+
+.signin-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 15px;
+    width: 41%;
+    height: 10vh;
+}
+
+.signin-block a {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 13px 35px 13px 35px;
+
+    color: #62C36C;
+    background: #FCE3E3;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.signin-block a:hover {
+    transition: 0.3s ease;
+    color: #FCE3E3;
+    background: #62C36C;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+        width: 98%;
+    }
+
+    header .header-logo img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .header-btn {
+        width: 14%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header-btn {
+        width: 14.5%;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .header-btn a {
+        width: 82%;
+    }
+
+    .logpass-block {
+        width: 48%;
+    }
+
+    .forgot-block {
+        height: 3.9vh;
+        width: 46%;
+    }
+
+    .signin-block a {
+        padding: 9px 30px 9px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-btn {
+        width: 20%;
+    }
+
+    .logpass-block {
+        width: 50%;
+    }
+
+    .forgot-block {
+        width: 49%;
+    }
+
+    .signin-block a {
+        padding: 7px 27px 7px 27px;
+    }
+}
