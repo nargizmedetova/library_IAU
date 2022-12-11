@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>My books</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+  .main--page-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: #908B04;
+  }
+
+  .header-block{
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 14vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #908B04;
+
+  }
+
+  .header-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 14vh;
+    border-bottom: 1.5px black solid;
+  }
+
+  .header-btn a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px 50px 12px 50px;
+
+    color: black;
+    background-color: white;
+    font-weight: 600;
+  }
+
+  .header-btn a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s ease;
+  }
+
+  .main--content-block{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 31%;
+    height: 74vh;
+  }
+
+  .main-text h5{
+    padding-top: 18px;
+    font-size: 20px;
+  }
+
+  .main-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 78vh;
+  }
+
+  .main-btns a{
+    margin-top: 12px;
+    padding: 7px 26px 7px 26px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+  }
+
+  .main-btns a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s ease;
+  }
+
+  .logo-block{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 52%;
+    height: 78vh;
+  }
+
+  .logo img{
+    width: 100px;
+    height: 100px;
+  }
+
+  @media only screen and (max-width: 1200px){
+    .main-text{
+      height: 67vh;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .main-text{
+      height: 72vh;
+    }
+  }
+
+</style>
+<body>
+<div class="main--page-block">
+  <div class="header-block">
+    <header>
+      <div class="header-btn">
+        <a href="/search.html">Search</a>
+        <a href="/allbooks.html">All books</a>
+        <a href="/main">My books</a>
+        <a href="/signUp">Log out</a>
+      </div>
+    </header>
+  </div>
+  <div class="main--content-block">
+    <div class="main-text">
+
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+      <h5>iajsdlal awdjlmk  LQKNS,  QLNSK</h5>
+    </div>
+    <div class="main-btns">
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+      <a href="###">add</a>
+    </div>
+    <div class="logo-block">
+      <div class="logo">
+        <img src="../static/images/alatoo.png" th:src="@{images/alatoo.png}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

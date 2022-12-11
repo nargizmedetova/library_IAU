@@ -254,16 +254,22 @@
         </header>
     </div>
     <div class="main-content">
-        <div class="logpass-block">
-            <input type="text" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-        </div>
-        <div class="forgot-block">
-            <a href="/forgotPass">Forgot password</a>
-        </div>
-        <div class="signin-block">
-            <a href="###">SIGN IN</a>
-        </div>
+        <form method="post" action="/signIn" th:object="${signInRequest}" >
+
+            <div class="logpass-block">
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="forgot-block">
+                <a href="/forgotPass">Forgot password</a>
+            </div>
+            <div class="signin-block">
+                <button type="submit">
+                    <p >SIGN IN</p>
+                </button>
+
+            </div>
+        </form>
     </div>
 </div>
 </body>
