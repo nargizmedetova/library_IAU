@@ -9,9 +9,8 @@ import java.util.Objects;
 @Table(name = "users_table")
 public class UsersModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+
+    private Long id;
     String password, email;
     //Objects<Books> = new Object;
 
@@ -37,6 +36,8 @@ public class UsersModel {
         return Objects.hash(id, password, email);
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {
         return id;
     }

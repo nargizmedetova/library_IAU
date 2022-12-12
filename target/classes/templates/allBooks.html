@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>All Books</title>
-</head>
-
-<body>
-
-<div>
-
-</div>
-
-</body>
+<html xmlns:th="https://thymeleaf.org">
+<table>
+    <tr th:each="el: ${books}" >
+            <td th:text="${el.id}"></td>
+            <td th:text="${el.name}"></td>
+           <!-- <td th:text="${el.getName}">Place name</td>-->
+<!--
+            <td th:text="${el.userId}">Place user id</td>
+-->
+            <!--<td th:text="${books.user_id}">Place Name</td>-->
+    </tr>
+</table>
 </html>

@@ -4,4 +4,6 @@ import com.example.library_IAU.model.Books;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BooksRepository extends JpaRepository<Books, Long> {
+    @Override
+    Books getById(Long id);
 }

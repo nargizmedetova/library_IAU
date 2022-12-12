@@ -7,13 +7,18 @@ import com.example.library_IAU.repository.BooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public class BooksService {
+public interface BooksService {
 
-    private final BooksRepository booksRepository;
+    List<Books> getAllBooks();
 
-    public BooksService(BooksRepository booksRepository) {
-        this.booksRepository = booksRepository;
-    }
+    Books saveBook(Books books);
 
+    Books getBookById(Long id);
+
+    Books updateBook(Books books);
+
+    void deleteBookById(Long id);
 }
