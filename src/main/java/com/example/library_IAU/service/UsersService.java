@@ -2,14 +2,27 @@ package com.example.library_IAU.service;
 
 
 import com.example.library_IAU.model.UsersModel;
-import com.example.library_IAU.repository.UsersRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
-public class UsersService {
+import java.util.List;
+import java.util.Optional;
 
-    private final UsersRepository usersRepository;
+@Service
+public interface UsersService {
+    List<UsersModel> getAllUsers();
+
+    UsersModel saveUser(UsersModel usersModel);
+
+    UsersModel getUserById(Long id);
+
+    UsersModel updateUser(UsersModel usersModel);
+
+    void deleteUserById(Long id);
+    UsersModel registerUser(String email, String password);
+    UsersModel authenticate(String email, String password);
+    Optional<UsersModel> getUsersModelByEmail(String email);
+
+   /* private final UsersRepository usersRepository;
 
     public UsersService(UsersRepository usersRepository) {
         this.usersRepository = usersRepository;
@@ -28,7 +41,7 @@ public class UsersService {
     }
     public UsersModel authenticate(String email, String password){
         return usersRepository.findByEmailAndPassword(email, password).orElse(null);
-    }
+    }*/
 
 
 }

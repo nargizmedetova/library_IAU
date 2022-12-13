@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LibraryIauApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(LibraryIauApplication.class, args);
+
 	}
 
 }
