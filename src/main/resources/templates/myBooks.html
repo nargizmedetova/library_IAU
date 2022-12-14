@@ -104,26 +104,26 @@
         <div class="header-block">
             <header>
                 <div class="header-btn">
-                    <a href="/search.html">Search</a>
-                    <a href="/">All books</a>
+                    <a href="/search">Search</a>
+                    <a href="/allBooks">All books</a>
                     <a href="/myBooks">My books</a>
                     <a href="/signUp">Log out</a>
                 </div>
             </header>
         </div>
 
-            <table>
-                <tr th:each="el: ${books}" >
+        <table>
+            <tr th:each="el: ${books}" >
 
-                        <td th:text="${el.name}"></td>
-                    <td th:text="${el.userId}"></td>
-                       <!-- <td th:text="${el.getName}">Place name</td>-->
-            <!--
-                        <td th:text="${el.userId}">Place user id</td>
-            -->
-                        <!--<td th:text="${books.user_id}">Place Name</td>-->
-                </tr>
-            </table>
+                <td th:text="${el.name}"></td>
+                <td th:text="${el.userId}"></td>
+                   <!-- <td th:text="${el.getName}">Place name</td>-->
+        <!--
+                    <td th:text="${el.userId}">Place user id</td>
+        -->
+                    <!--<td th:text="${books.user_id}">Place Name</td>-->
+            </tr>
+        </table>
         </div>
     </body>
 </html>

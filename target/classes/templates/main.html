@@ -146,8 +146,8 @@
   <div class="header-block">
     <header>
       <div class="header-btn">
-        <a href="/search.html">Search</a>
-        <a href="/">All books</a>
+        <a href="/search">Search</a>
+        <a href="/allBooks">All books</a>
         <a href="/myBooks">My books</a>
         <a href="/signUp">Log out</a>
       </div>
@@ -160,8 +160,8 @@
         <td th:text="${employee.name}"></td>
         <td>
           <ul class="action-list">
-            <li><a th:href="@{/add/{id}(id=${employee.id})}" class="btn btn-primary"><i class="fa fa-pencil" style="font-size:20px"></i>
-            </a></li>
+            <li><button><a th:href="@{/add/{id}(id=${employee.id})}" class="btn btn-primary">add</a>
+            </button></li>
           </ul>
         </td>
 

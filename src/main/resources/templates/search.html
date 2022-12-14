@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+  <form method="post" action="/search" th:action="@{/search}" th:object="${search}">
+    <input type="text" name="search" placeholder="search..." required>
+    <button type="submit" >search</button>
+  </form>
+
+</div>
+
+</body>
+</html>
