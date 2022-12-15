@@ -110,19 +110,8 @@ String emailOfUser;
         model.addAttribute("books",books);
         return "main";
     }
-    /*@PostMapping("/")
-    public String saveEmp(@ModelAttribute("employee") Books employee) {
-        System.out.println(employee);
-        booksService.saveBook(employee);
-        return "redirect:/";
-    }*/
 
 
-
-    @GetMapping("/forgotPass")
-    public String forgotPass(Model model){
-        return "forgotPass";
-    }
     @GetMapping("/add/{id}")
     public String editEmpForm(@PathVariable Long id, Model model) {
         //model.addAttribute("employee", booksService.getBooksById(id));

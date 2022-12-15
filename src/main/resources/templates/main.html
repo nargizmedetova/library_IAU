@@ -24,7 +24,10 @@
     align-items: flex-start;
     width: 100%;
     height: auto;
-    background-color: #908B04;
+  }
+  body {
+    background-image: url(/images/library.jpg);
+    background-size: cover;
   }
 
   .header-block{
@@ -127,6 +130,25 @@
     width: 100px;
     height: 100px;
   }
+  .bookText{
+    font-size: 20px;
+    color: #FCE3E3;
+  }
+  .textBox{
+    background-color: #62C36C;
+    border-radius: 10px;
+  }
+  .nameAclass{
+    font-size: 20px;
+    color: #62C36C;
+    padding: 20px;
+    text-decoration: none;
+  }
+  .addDiv{
+    background-color: #FCE3E3;
+
+    border-radius: 10px;
+  }
 
   @media only screen and (max-width: 1200px){
     .main-text{
@@ -157,11 +179,20 @@
     <div class="main-text">
       <tr th:each="employee: ${books}">
 
-        <td th:text="${employee.name}"></td>
+        <td>
+          <div class="textBox">
+            <h class="bookText" th:text="${employee.name}"></h>
+          </div>
+
+        </td>
         <td>
           <ul class="action-list">
-            <li><button><a th:href="@{/add/{id}(id=${employee.id})}" class="btn btn-primary">add</a>
-            </button></li>
+            <li>
+              <div class="addDiv">
+                <a class="nameAclass" th:href="@{/add/{id}(id=${employee.id})}">add</a>
+              </div>
+
+            </li>
           </ul>
         </td>
 
